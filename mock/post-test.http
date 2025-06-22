@@ -1,0 +1,17 @@
+### POST test for /api/log endpoint
+POST http://localhost:3000/api/log
+Content-Type: application/json
+
+{
+  "name": "Ruslan",
+  "text": "Ich habe gerade 350 calorien und 30 gramm eiweis gegessen"
+}
+
+<> 2025-06-22T202928.400.json
+<> 2025-06-22T202926.400.json
+<> 2025-06-22T202843.400.json
+###
+
+
+### GET test for /api/log endpoint - retrieve calories for user
+GET http://localhost:3000/api/log?name=Ruslan
